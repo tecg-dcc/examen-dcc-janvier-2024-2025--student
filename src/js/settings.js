@@ -12,6 +12,7 @@ export const settings = {
     feedbackElementId: 'feedback',
     typedFormElementId: 'type-again__form',
     typedFormContainerElementId: 'type-again',
+    wordClass: 'word',
     getFeedback(correctLetter, errorLetter, totalword, time) {
         return `Vous avez tapé ${correctLetter} lettre${correctLetter > 1 ? 's' : ''} correcte${correctLetter > 1 ? 's' : ''} et ${errorLetter} mauvaise${errorLetter > 1 ? 's' : ''} lettre${errorLetter > 1 ? 's' : ''} sur un total de ${totalword} mot${totalword > 1 ? 's' : ''}. Endéans ${time} secondes.`;
     },
